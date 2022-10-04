@@ -1,19 +1,7 @@
 <template>
-  <v-app>
-    <v-container fluid>
-      <v-row>
-        <v-col>
-          <!-- Spinner Start -->
-         <!--  <div id="spinner"
-            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-              <div class="spinner-grow text-primary" role="status"></div>
-          </div> -->
-          <!-- Spinner End -->
-        </v-col>
-      </v-row>
+  <v-app class="site-background">
 
-      <navbar />
-    </v-container>
+    <navbar />
 
   </v-app>
 </template>
@@ -26,3 +14,11 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.site-background {
+  background: linear-gradient(rgba(0, 29, 35, .8), rgba(0, 29, 35, .8)),
+    url("@/assets/images/background.jpg") no-repeat center center;
+  background-size: cover;
+}
+</style>
